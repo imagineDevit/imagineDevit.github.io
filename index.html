@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <title>IMAGINE AND DEV IT</title>
     <script src="./website/main.js"></script>
+    <link rel="stylesheet" href="./website/src/main.css">
+    <link rel="icon" href="./website/public/favicon.ico">
+    <link rel="manifest" href="./website/public/manifest.json">
 </head>
 <body>
-    <script>var app = Elm.Main.init();</script>
+    <div id="elm-app"></div>
+    <script>var app = Elm.Main.init({
+        node: document.getElementById('elm-app')
+    });</script>
 </body>
 </html>
