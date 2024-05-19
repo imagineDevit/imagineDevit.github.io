@@ -1,0 +1,62 @@
+
+.HeaderContainer {
+    padding: 10px 0;
+    background-color: var(--white);
+}
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+}
+
+.Separator {
+    height: 40px;
+    width: 1px;
+    background-color: var(--grey);
+    margin-left: 10px;
+
+}
+
+.Title {
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding-left: 10px;
+    opacity: 0.8;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.Blue {
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.Github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.4;
+
+    img {
+        margin-right: 4px;
+    }
+}
+
+.Github:hover {
+    opacity: 1;
+}
+
+.Link {
+    color: #373737;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 1rem;
+    font-style: italic;
+}

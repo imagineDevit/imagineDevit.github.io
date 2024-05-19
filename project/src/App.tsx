@@ -1,27 +1,38 @@
-import type { Component } from 'solid-js';
+import {Component} from 'solid-js';
 
-import logo from './logo.svg';
 import styles from './App.module.css';
+import {Header} from "./components/header/Header";
+import {Intro} from "./components/intro/Intro";
+import {Menu} from "./components/menu/Menu";
+import {Libs} from "./components/libs/Libs";
+import {setShowDescription, showDescription} from "./store";
 
 const App: Component = () => {
-  return (
-    <div class={styles.App}>
-      <header class={styles.header}>
-        <img src={logo} class={styles.logo} alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          class={styles.link}
-          href="https://github.com/solidjs/solid"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Solid
-        </a>
-      </header>
-    </div>
-  );
+
+    const gitUser = 'imagineDevit';
+    const gitUrl = 'https://github.com/imagineDevit';
+
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            setShowDescription(false);
+        } else {
+            setShowDescription(true);
+        }
+    });
+
+    return (
+        <div class={styles.App}>
+            <div class={styles.Fixed}>
+                <Header user={gitUser} url={gitUrl}/>
+                {showDescription() && <Intro/>}
+                <Menu/>
+            </div>
+
+
+            <Libs/>
+        </div>
+    );
 };
 
 export default App;

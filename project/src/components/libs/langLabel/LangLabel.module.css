@@ -1,0 +1,17 @@
+.Content {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 60px 0;
+}
+
+.Logo {
+    width: 40px;
+    padding-right: 4px;
+}
+
+.Lang {
+    font-size: 1.7rem;
+    font-weight: 400;
+}

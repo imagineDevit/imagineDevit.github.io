@@ -1,0 +1,11 @@
+.IntroContainer {
+    margin: 0 auto;
+    background-color: var(--black);
+
+}
+
+.Intro {
+    padding: 30px 0;
+    font-size: 1.5rem;
+    color: var(--white);
+}
