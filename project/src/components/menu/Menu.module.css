@@ -12,22 +12,30 @@
     width: 60%;
     display: flex;
     justify-content: space-between;
-    padding: 15px 0;
+    padding: 15px 8px;
 }
 
 .MenuItem {
     color: var(--grey);
     font-weight: 500;
-    cursor: pointer;
     font-size: 1.3rem;
 }
 
-.MenuItem:hover {
+.Disabled{
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.Clickable {
+    cursor: pointer;
+}
+
+.Clickable:hover {
     color: var(--blue);
 }
 
 .Separator {
-    height: 50px;
+    height: 45px;
     width: 1px;
     background-color: var(--grey);
     margin: 0 calc(5% / 2);
@@ -46,7 +54,7 @@
 
 .Input {
     width: 100%;
-    height: 30px;
+    height: 50px;
     border: none;
     outline: none;
     font-family: Arial, sans-serif;
@@ -57,7 +65,26 @@
 }
 
 .Input::placeholder {
-    color: var(--grey);
     font-style: italic;
     font-size: 1.2rem;
+}
+
+.LightGrey {
+    color: var(--light-grey);
+}
+
+.BgBlack {
+    background-color: var(--black);
+}
+
+.BgWhite {
+    background-color: var(--white);
+}
+
+.Blue {
+    color: var(--blue);
+}
+
+.White {
+    color: var(--white);
 }

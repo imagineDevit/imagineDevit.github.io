@@ -4,6 +4,10 @@ import Rust from './assets/Rust.png';
 import Go from './assets/Golang.png';
 import {JSXElement} from "solid-js";
 
+export const MAX_VISIBLE_DESCRIPTION = 90;
+export const TOP_OFFSET_MAX =  300;
+export const TOP_OFFSET_MIN = 130;
+
 export enum PLang {
     JAVA = 'Java',
     KOTLIN = 'Kotlin',
@@ -25,6 +29,7 @@ export type Project = {
     description: JSXElement;
     github: Github;
     site: Site | undefined;
+    keywords: string[] | undefined;
 }
 
 export const logoOf = (lang: PLang): string => {
@@ -38,4 +43,8 @@ export const logoOf = (lang: PLang): string => {
         case PLang.GO:
             return Go;
     }
+}
+
+export const match = (term: string, project: Project): boolean => {
+    return project.keywords !== undefined && project.keywords.some(k => k.toLowerCase().includes(term.toLowerCase()))
 }

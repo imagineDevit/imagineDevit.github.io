@@ -1,8 +1,9 @@
 :root {
     --black: rgba(40, 39, 40);
     --grey: rgba(40, 39, 40, 0.30);
+    --light-grey: rgba(197, 197, 197, 0.65);
     --white: rgb(255, 255, 255);
-    --blue: rgb(22, 61, 145);
+    --blue: rgb(91, 131, 204);
 }
 
 body {

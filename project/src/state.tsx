@@ -16,7 +16,17 @@ export const libs: Project[] = [
         github: {
             url: 'https://github.com/imagineDevit/giwt'
         },
-        site: undefined
+        site: undefined,
+        keywords: [
+            'Java',
+            'JUnit',
+            'testing',
+            'test engine',
+            'given-when-then',
+            'tests',
+            'unit test',
+            'integration test'
+        ]
     },
     {
         name: 'giwt-kt',
@@ -29,7 +39,16 @@ export const libs: Project[] = [
         github: {
             url: 'https://github.com/imagineDevit/giwt-kt'
         },
-        site: undefined
+        site: undefined,
+        keywords: [
+            'Kotlin',
+            'JUnit',
+            'testing',
+            'test engine',
+            'given-when-then',
+            'tests',
+            'unit test',
+            'integration test']
     },
     {
         name: 'edgedb-query-derive',
@@ -44,6 +63,14 @@ export const libs: Project[] = [
         },
         site: {
             url: 'https://imaginedevit.github.io/edgedb/'
-        }
+        },
+        keywords: [
+            'Rust',
+            'edgedb',
+            'database',
+            'procedural macros',
+            'derive',
+            'query',
+            'queries']
     }
 ]

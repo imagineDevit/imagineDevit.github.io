@@ -1,29 +1,25 @@
 import {Component} from "solid-js";
-import {PLang} from "../../../models";
-import {libs} from "../../../state";
+import {Project} from "../../../models";
 import styles from "./LangLibs.module.css";
 import {Lib} from "../lib/Lib";
 import {LangLabel} from "../langLabel/LangLabel";
 
 
 export type LangLibsProps = {
-    lang: PLang;
+    libs: Project[];
 }
 
-export const LangLibs: Component<LangLibsProps> = ({lang}) => {
+export const LangLibs: Component<LangLibsProps> = ({libs}) => {
 
-    const plangs = libs.filter(lib => lib.lang === lang);
-
-
-    if (plangs.length === 0) return (<></>);
+    if (libs.length === 0) return (<></>);
 
     return (
 
         <div>
-            <LangLabel lang={lang}/>
+            <LangLabel lang={libs[0].lang}/>
 
             <div class={styles.Libs}>
-                {plangs.map(lib => <Lib project={lib}/>)}
+                {libs.map(lib => <Lib project={lib}/>)}
             </div>
         </div>
     )
