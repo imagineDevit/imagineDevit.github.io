@@ -26,7 +26,11 @@ export const libs: Project[] = [
             'tests',
             'unit test',
             'integration test'
-        ]
+        ],
+        version: {
+            badgeSrc: 'https://img.shields.io/maven-central/v/io.github.imagineDevit/giwt?color=%235B83CC',
+            url: 'https://central.sonatype.com/artifact/io.github.imagineDevit/giwt/overview'
+        }
     },
     {
         name: 'giwt-kt',
@@ -48,7 +52,11 @@ export const libs: Project[] = [
             'given-when-then',
             'tests',
             'unit test',
-            'integration test']
+            'integration test'],
+        version: {
+            badgeSrc: 'https://img.shields.io/maven-central/v/io.github.imagineDevit/giwt-kt?color=%235B83CC',
+            url: 'https://central.sonatype.com/artifact/io.github.imagineDevit/giwt-kt/overview'
+        }
     },
     {
         name: 'edgedb-query-derive',
@@ -71,6 +79,11 @@ export const libs: Project[] = [
             'procedural macros',
             'derive',
             'query',
-            'queries']
+            'queries'],
+        version: {
+            badgeSrc: 'https://img.shields.io/crates/v/edgedb-query-derive?color=%235B83CC',
+            url: 'https://crates.io/crates/edgedb-query-derive'
+        }
+
     }
 ]

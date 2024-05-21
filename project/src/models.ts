@@ -23,6 +23,11 @@ export type Site = {
     url: string;
 }
 
+export type Version = {
+    badgeSrc: string;
+    url: string;
+}
+
 export type Project = {
     name: string;
     lang: PLang;
@@ -30,6 +35,7 @@ export type Project = {
     github: Github;
     site: Site | undefined;
     keywords: string[] | undefined;
+    version: Version;
 }
 
 export const logoOf = (lang: PLang): string => {

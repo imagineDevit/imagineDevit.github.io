@@ -5,8 +5,11 @@
 }
 
 .Content:hover {
-    .Desc {
+    .DescContainer {
         background-color: var(--black);
+    }
+
+    .Desc {
         color: var(--white);
     }
 }
@@ -18,52 +21,53 @@
     font-family: "Gurmukhi Sangam MN", sans-serif;
 }
 
-.Link {
+.DescContainer {
     display: flex;
-    justify-content: start;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    cursor: pointer;
-    color: var(--grey);
+    align-content: center;
 
-    img {
-        display: none;
-        margin-right: 4px;
-    }
-
-    div {
-        font-size: 0.7rem;
-        font-weight: 500;
-        font-style: italic;
-        font-family: "Gurmukhi Sangam MN", sans-serif;
-        padding-left: 5px;
-        border-left: 1px solid var(--grey);
-    }
+    height: 80%;
+    margin: 3px;
+    padding: 5px;
+    border: 1px solid var(--black);
+    border-radius: 5px;
 }
 
-.Link:hover {
-    color: var(--black);
-
-    img {
-        display: block;
-    }
-
-    div {
-        border: none;
-        padding-left: 0;
-    }
+.Version {
+    align-self: flex-start;
 }
 
 .Desc {
-    height: 80%;
-    margin: 3px;
-
-    border: 1px solid var(--black);
-    border-radius: 5px;
-
-    padding: 5px;
     color: var(--black);
     font-size: 1rem;
+}
+
+.Links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     align-content: center;
+    width: 100%;
+}
+
+.BtnLink {
+    display: flex;
+    cursor: pointer;
+}
+
+.BtnLinkImg {
+    background-color: var(--blue);
+    padding: 3px;
+    border-radius: 5px 0 0 5px;
+}
+
+.BtnLinkText {
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 3px;
+    background-color: #5C5C5C;
+    color: var(--white);
+    border-radius: 0 5px 5px 0;
 }
