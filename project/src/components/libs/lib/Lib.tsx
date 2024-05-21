@@ -39,9 +39,9 @@ export const Lib: Component<LibProps> = ({project}: LibProps) => {
                     {project.site &&
                         <div class={styles.BtnLink} onClick={() => navigate(project.site!!.url)}>
                             <div class={styles.BtnLinkImg}>
-                                <img src={web} width={15} alt={'website'}/>
+                                <img class={styles.Transparent} src={web} width={15} alt={'website'}/>
                             </div>
-                            <div class={styles.BtnLinkText}> doc site</div>
+                            <div class={styles.BtnLinkText}>doc site</div>
                         </div>
                     }
                 </div>
