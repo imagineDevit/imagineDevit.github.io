@@ -41,7 +41,7 @@ export const Lib: Component<LibProps> = ({project}: LibProps) => {
                             <div class={styles.BtnLinkImg}>
                                 <img src={web} width={15} alt={'website'}/>
                             </div>
-                            <div class={styles.BtnLinkText}> website</div>
+                            <div class={styles.BtnLinkText}> doc site</div>
                         </div>
                     }
                 </div>

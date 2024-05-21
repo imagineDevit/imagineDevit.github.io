@@ -24,7 +24,10 @@ export const [store, setStore] = createStore<State>({
 export const [searchTerm, setSearchTerm] = [
     () => store.searchTerm,
     (value: string) => {
-        if (value === '') setStore('searchTerm', undefined)
+        if (value === '') {
+            setStore('searchTerm', undefined)
+            setActiveLang(undefined, false, false)
+        }
         else setStore('searchTerm', value)
     }
 ]
@@ -53,7 +56,7 @@ export const [anchors, addAnchor, setAnchors] = [
 
 export const [activeLang, setActiveLang] = [
     () => store.activeLang,
-    (value: PLang, byClick: boolean, hideDescription : boolean) => {
+    (value: PLang | undefined, byClick: boolean, hideDescription : boolean) => {
 
     if (store.onMenuItemSelecting) return
 
