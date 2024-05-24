@@ -6,6 +6,32 @@ const link = (url: string, text: string) => {
 
 export const libs: Project[] = [
     {
+        name: 'giwt-core',
+        lang: PLang.JAVA,
+        description: <>
+            The core module of <strong>Giwt</strong> <i>test engine</i> that provides shared classes and interfaces
+            for <strong>Java</strong> and <strong>Kotlin</strong> implementations.
+        </>,
+        github: {
+            url: 'https://github.com/imagineDevit/giwt-core'
+        },
+        site: undefined,
+        keywords: [
+            'Java',
+            'JUnit',
+            'testing',
+            'test engine',
+            'given-when-then',
+            'tests',
+            'unit test',
+            'integration test'
+        ],
+        version: {
+            badgeSrc: 'https://img.shields.io/maven-central/v/io.github.imagineDevit/giwt-core?color=%235B83CC',
+            url: 'https://central.sonatype.com/artifact/io.github.imagineDevit/giwt-core/overview'
+        }
+    },
+    {
         name: 'giwt',
         lang: PLang.JAVA,
         description: <>
