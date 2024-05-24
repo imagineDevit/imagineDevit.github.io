@@ -17,6 +17,7 @@ export const libs: Project[] = [
         },
         site: undefined,
         keywords: [
+            'giwt',
             'Java',
             'JUnit',
             'testing',
@@ -44,6 +45,7 @@ export const libs: Project[] = [
         },
         site: undefined,
         keywords: [
+            'giwt',
             'Java',
             'JUnit',
             'testing',
@@ -71,6 +73,7 @@ export const libs: Project[] = [
         },
         site: undefined,
         keywords: [
+            'giwt',
             'Kotlin',
             'JUnit',
             'testing',
@@ -83,6 +86,29 @@ export const libs: Project[] = [
             badgeSrc: 'https://img.shields.io/maven-central/v/io.github.imagineDevit/giwt-kt?color=%235B83CC',
             url: 'https://central.sonatype.com/artifact/io.github.imagineDevit/giwt-kt/overview'
         }
+    },
+    {
+        name: 'edgedb-query',
+        lang: PLang.RUST,
+        description: <>
+            A rust crate that provides <code>structs</code> and <code>traits</code>
+            used in {link('https://crates.io/crates/edgedb-query-derive', 'edgedb-query-derive')} crate.
+        </>,
+        github: {
+            url: 'https://github.com/imagineDevit/edgedb'
+        },
+        site: undefined,
+        keywords: [
+            'Rust',
+            'edgedb',
+            'database',
+            'query',
+            'queries'],
+        version: {
+            badgeSrc: 'https://img.shields.io/crates/v/edgedb-query?color=%235B83CC',
+            url: 'https://crates.io/crates/edgedb-query'
+        }
+
     },
     {
         name: 'edgedb-query-derive',

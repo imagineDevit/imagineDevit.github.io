@@ -12,6 +12,11 @@
     .Desc {
         color: var(--white);
     }
+
+    code {
+        background-color: rgba(92, 92, 92, 0.5);
+        color: var(--white);
+    }
 }
 
 .Name {

@@ -52,5 +52,6 @@ export const logoOf = (lang: PLang): string => {
 }
 
 export const match = (term: string, project: Project): boolean => {
-    return project.keywords !== undefined && project.keywords.some(k => k.toLowerCase().includes(term.toLowerCase()))
+    return project.name.includes(term)
+        || ( project.keywords !== undefined && project.keywords.some(k => k.toLowerCase().includes(term.toLowerCase())))
 }
