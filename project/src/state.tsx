@@ -43,7 +43,9 @@ export const libs: Project[] = [
         github: {
             url: 'https://github.com/imagineDevit/giwt'
         },
-        site: undefined,
+        site: {
+            url: 'https://imaginedevit.github.io/giwt-docs/'
+        },
         keywords: [
             'giwt',
             'Java',
@@ -71,7 +73,9 @@ export const libs: Project[] = [
         github: {
             url: 'https://github.com/imagineDevit/giwt-kt'
         },
-        site: undefined,
+        site: {
+            url: 'https://imaginedevit.github.io/giwt-docs/'
+        },
         keywords: [
             'giwt',
             'Kotlin',
