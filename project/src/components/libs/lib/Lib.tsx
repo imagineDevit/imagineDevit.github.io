@@ -30,7 +30,7 @@ export const Lib: Component<LibProps> = ({project}: LibProps) => {
                 </div>
                 <div class={styles.Links}>
                     <div class={styles.BtnLink} onClick={() => navigate(project.github.url)}>
-                    <div class={styles.BtnLinkImg}>
+                        <div class={styles.BtnLinkImg}>
                             <img src={github} width={15} alt={'github'}/>
                         </div>
                         <div class={styles.BtnLinkText}> source code</div>
@@ -39,14 +39,13 @@ export const Lib: Component<LibProps> = ({project}: LibProps) => {
                     {project.site &&
                         <div class={styles.BtnLink} onClick={() => navigate(project.site!!.url)}>
                             <div class={styles.BtnLinkImg}>
-                                <img class={styles.Transparent} src={web} width={15} alt={'website'}/>
+                                <img src={web} width={15} alt={'website'}/>
                             </div>
-                            <div class={styles.BtnLinkText}>doc site</div>
+                            <div class={styles.BtnLinkText}>documentation</div>
                         </div>
                     }
                 </div>
             </div>
-
         </div>
 
     )
